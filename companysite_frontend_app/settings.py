@@ -83,7 +83,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = ')!^cfmtij-^&09pehy81l9k0*4ikt+wnu*3d7hf5eb9^yey#h3'
+SECRET_KEY = '_6sqyn#^7$(4#mgrwc28+t--1i_69l))^5a!m9**!x90#m$ffj'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -154,3 +154,14 @@ LOGGING = {
         },
     }
 }
+INSTALLED_APPS = INSTALLED_APPS + ('companysite_frontend_app',)
+import os.path
+TEMPLATE_DIRS = TEMPLATE_DIRS + (os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),)
+
+#my enviroment variables
+if 'COMPANY_ENV_DEBUG' in os.environ:
+    DEBUG = os.environ['COMPANY_ENV_DEBUG'] == 'TRUE'
+else:
+    DEBUG = True
+TEMPLATE_DEBUG = DEBUG
+SERVER_URL = os.getenv('SERVER_URL', 'https://companysite-backend-dev.herokuapp.com')

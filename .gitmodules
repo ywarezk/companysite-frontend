@@ -1,0 +1,3 @@
+[submodule "companysite_frontend_app/static/app/scripts/nerdeez-ember"]
+	path = companysite_frontend_app/static/app/scripts/nerdeez-ember
+	url = https://github.com/ywarezk/nerdeez-ember.git
