@@ -1,4 +1,27 @@
-.span8{
+._header{
 	background-color: black;
-	border-radius: 10px;
+	border-radius: 0 0 10px 10px;
+	.logo{
+	    padding-left: 10px;
+	    padding-top: 15px;
+		};
+	.logo-txt{
+	    padding-top: 35px;
+	    color:white;
+	};
+	.nav{
+	    padding-top: 35px;
+	    li a:hover{
+	    	color:black;
+	    	i{
+	    		color: #F54D70;
+	    	};
+	    }
+	};
+	.nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus{
+		background-color: #F54D70;
+	};
+	a{
+		color: white;		
+	};
 }
