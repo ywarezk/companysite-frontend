@@ -1,27 +1,42 @@
 ._header{
 	background-color: black;
-	border-radius: 0 0 10px 10px;
+	@include border-radius(0 0 10px 10px);
 	.logo{
+		position: relative;
+    	top: 10px;
 	    padding-left: 10px;
-	    padding-top: 15px;
 		};
 	.logo-txt{
-	    padding-top: 35px;
+	    font-size: 27px;
+	    line-height: 26px;
+	    position: relative;
+	    top: 20px;
+	    font-family:'Josefin Sans', Helvetica, Arial, sans-serif;
 	    color:white;
 	};
 	.nav{
 	    padding-top: 35px;
-	    li a:hover{
-	    	color:black;
-	    	i{
-	    		color: #F54D70;
-	    	};
-	    }
+	    li{
+			.active, .active:hover{
+				background-color: #F54D70;
+					color: white;
+		    		i{
+		    		  color: white;
+		    		 };
+				};
+	     	a:hover{
+		    	color:black;
+		    		i{
+		    		  color: #F54D70;
+		    		 };
+		   		 };
+		  };
+		};
+	a, a:hover .active{
+		color: white;
 	};
-	.nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus{
-		background-color: #F54D70;
-	};
-	a{
-		color: white;		
+	ul{
+		position: relative;
+    	top: 21px;
 	};
 }
