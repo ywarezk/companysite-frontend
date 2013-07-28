@@ -1,8 +1,14 @@
 /* Put your CSS here */
 html, body {
-    margin: 20px;
+	height: 100%;
 
 }
+* {
+	margin: 0;
+}
 #wrap{
-    margin: -40px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+    margin:  0 auto -100px;
 	}
