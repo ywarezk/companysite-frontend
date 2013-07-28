@@ -1,6 +1,5 @@
 ._header{
-
-  @include background(linear-gradient(to bottom, #3D3D3D, #454545));
+  	@include background(linear-gradient(to bottom, #3D3D3D, #454545));
 	@include border-radius(0 0 10px 10px);
 	.logo{
 		position: relative;
