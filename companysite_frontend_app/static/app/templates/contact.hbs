@@ -1,8 +1,16 @@
 
 <div class="contact">
 	<form id='formID' {{action save on="submit"}}>
-	    {{view Ember.TextField valueBinding="email" class="validate[custom[email]]" placeholder="Enter Email Address" required="true"}}
-	    <br />
+		<div>
+	    {{
+		    view Ember.TextField
+		    valueBinding="email"
+		    class="validate[custom[email]]"
+		    placeholder="Enter Email Address"
+		    required="true"
+		}}
+		</div>
+		<div>
 	    {{
 	    	view Ember.TextArea
 	    	valueBinding="txt"
@@ -10,13 +18,7 @@
 	    	placeholder="Enter Text"
 	    	required="true"
 	    }}
-	    <br />
+		</div>
 	     <button type="submit">Save</button>
 	</form>
-
-	<script>
-	$(document).ready(function(){
-        	$("#formID").validationEngine('attach');
-       });
-	</script>
 </div>
