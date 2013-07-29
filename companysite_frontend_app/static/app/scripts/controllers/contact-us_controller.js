@@ -4,6 +4,9 @@ Company.ContactController = Ember.ObjectController.extend({
 	txt: null,
 
   	save: function() {
+    	$(document).ready(function(){
+        	$("#formID").validationEngine('attach');
+       });
 	  	email = this.get('email');
 	  	txt= this.get('txt');
   		var hash={
@@ -22,6 +25,6 @@ Company.ContactController = Ember.ObjectController.extend({
 	  		Company.contact_url,
 	  		'POST',
 	  		hash
-	  	);
+	  	); 	
 	}
 });
