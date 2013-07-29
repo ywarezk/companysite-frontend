@@ -1,6 +1,18 @@
 
-.footer, .push{
-	height: 100px;
-  	@include background(linear-gradient(to bottom, #3D3D3D, #454545));
-	@include border-radius(10px 10px 0 0);
+.footer{
+		.container{
+			height: 60px;
+	  		@include background(linear-gradient(to bottom, #3D3D3D, #454545));
+			@include border-radius(10px 10px 0 0);
+			};
+		.font-color, a{
+			color:white;
+			};
+		ul{
+			font-size: 12px;
+			@include no-bullets;
+			position: relative;
+			left:55px;
+			padding-left: 0px;
+		};
 }
