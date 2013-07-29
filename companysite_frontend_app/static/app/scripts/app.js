@@ -10,8 +10,11 @@ var Company = window.Company = Ember.Application.create({
 });
 
 
-
+//controllers
 require('scripts/controllers/*');
+
+//views
+require('scripts/views/*');
 
 //routes
 require('scripts/routes/company-routes');
