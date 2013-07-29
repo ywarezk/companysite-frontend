@@ -11,12 +11,8 @@
 /**
  * handles backend communication
  */
-Company.Store = DS.Store.extend({
-	
-	/**
-	 * our adapter
-	 */
-	adapter: Nerdeez.DjangoTastypieAdapter.extend({
+Company.Adapter= Nerdeez.DjangoTastypieAdapter.extend({
+
 	    /**
 	     * adapter hook to set the server url
 	     */
@@ -42,6 +38,13 @@ Company.Store = DS.Store.extend({
                 //this.mappings.set( 'Nerdeez.Course', { university: { embedded: 'load' } } );
             }
 	    })
-	})
+
+});
+
+adapter = Company.Adapter.create();
+
+Company.store = DS.Store.create({
 	
+	adapter:adapter,
+
 });

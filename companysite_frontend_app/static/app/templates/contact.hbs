@@ -1,3 +1,9 @@
-<div class="hero-unit">
-	iklkh
+
+<div class="contact">
+	<form {{action save on="submit"}}>
+	    {{view Ember.TextField valueBinding="email" placeholder="Enter Email Address" required="true"}}
+	    <br />
+	    {{view Ember.TextArea valueBinding="txt" placeholder="Enter Text" required="true"}}<br />
+	     <button type="submit">Save</button>
+	</form>
 </div>
