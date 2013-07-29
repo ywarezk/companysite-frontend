@@ -2,7 +2,7 @@
 .footer{
 		.container{
 			height: 60px;
-	  		@include background(linear-gradient(to bottom, #3D3D3D, #454545));
+	  		@include background(linear-gradient(to bottom, #3D3D3D, #5C5C5C));
 			@include border-radius(10px 10px 0 0);
 			};
 		.font-color, a{
@@ -13,11 +13,11 @@
 			@include no-bullets;
 			position: relative;
 			padding-left: 0px;
-			top:7px;
+			top:12px;
 		};
 		.nerdeez-copyright{
 			position: relative;
 			left:55px;
-			top:7px;
+			top:20px;
 		};
 }
