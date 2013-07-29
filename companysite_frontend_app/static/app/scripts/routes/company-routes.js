@@ -10,10 +10,12 @@
  * define the routes urls here
  */
 Company.Router.map(function () {
+	this.resource('contact');
 });
+
 
 Company.IndexRoute = Ember.Route.extend({
   model: function () {
-    return [];
+    return ['dsf'];
   }
 });
