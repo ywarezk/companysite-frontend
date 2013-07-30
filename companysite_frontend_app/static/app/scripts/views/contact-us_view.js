@@ -11,10 +11,14 @@
 Company.ContactView = Ember.View.extend({
 	templateName : 'contact',
 
+	saveto:function(){
+		this.controller.save(this);
+	},
+
 	didInsertElement: function() {
 		$(document).ready(function(){
         	$("#formID").validationEngine('attach');
-       });
-	}
+       		});
+	},
 
 });

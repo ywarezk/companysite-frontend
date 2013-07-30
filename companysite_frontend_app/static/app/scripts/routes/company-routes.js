@@ -19,3 +19,8 @@ Company.IndexRoute = Ember.Route.extend({
     return ['dsf'];
   }
 });
+
+Company.StatusContactRoute = Ember.Route.extend({
+
+
+});
