@@ -1,0 +1,483 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'update',
+1 verbose cli   '-g',
+1 verbose cli   'generator-ember' ]
+2 info using npm@1.3.2
+3 info using node@v0.10.13
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ 'generator-ember', '*' ]
+6 verbose cache add name="generator-ember" spec="*" args=["generator-ember","*"]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '*',
+7 verbose parsed url   path: '*',
+7 verbose parsed url   href: '*' }
+8 verbose addNamed [ 'generator-ember', '*' ]
+9 verbose addNamed [ null, '*' ]
+10 silly lockFile 5a08f931-generator-ember generator-ember@*
+11 verbose lock generator-ember@* /home/yael/.npm/5a08f931-generator-ember.lock
+12 silly addNameRange { name: 'generator-ember', range: '*', hasData: false }
+13 verbose url raw generator-ember
+14 verbose url resolving [ 'https://registry.npmjs.org/', './generator-ember' ]
+15 verbose url resolved https://registry.npmjs.org/generator-ember
+16 info trying registry request attempt 1 at 17:29:49
+17 verbose etag "31L2MQ4PZQC8U0SXK0MS4ERR6"
+18 http GET https://registry.npmjs.org/generator-ember
+19 http 200 https://registry.npmjs.org/generator-ember
+20 silly registry.get cb [ 200,
+20 silly registry.get   { vary: 'Accept',
+20 silly registry.get     server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+20 silly registry.get     etag: '"4TU8A8FM8TCR4C7NYQ3JR5V1D"',
+20 silly registry.get     date: 'Tue, 30 Jul 2013 14:29:51 GMT',
+20 silly registry.get     'content-type': 'application/json',
+20 silly registry.get     'content-length': '106090' } ]
+21 silly addNameRange number 2 { name: 'generator-ember', range: '*', hasData: true }
+22 silly addNameRange versions [ 'generator-ember',
+22 silly addNameRange   [ '0.1.0',
+22 silly addNameRange     '0.2.0',
+22 silly addNameRange     '0.2.1',
+22 silly addNameRange     '0.2.2',
+22 silly addNameRange     '0.2.3',
+22 silly addNameRange     '0.2.4',
+22 silly addNameRange     '0.2.5',
+22 silly addNameRange     '0.3.0',
+22 silly addNameRange     '0.3.1',
+22 silly addNameRange     '0.4.0',
+22 silly addNameRange     '0.4.1',
+22 silly addNameRange     '0.5.0',
+22 silly addNameRange     '0.5.1',
+22 silly addNameRange     '0.5.2',
+22 silly addNameRange     '0.5.3',
+22 silly addNameRange     '0.5.4',
+22 silly addNameRange     '0.5.5',
+22 silly addNameRange     '0.5.6',
+22 silly addNameRange     '0.5.7',
+22 silly addNameRange     '0.5.8',
+22 silly addNameRange     '0.5.9' ] ]
+23 verbose addNamed [ 'generator-ember', '0.5.9' ]
+24 verbose addNamed [ '0.5.9', '0.5.9' ]
+25 silly lockFile 42cb16f0-generator-ember-0-5-9 generator-ember@0.5.9
+26 verbose lock generator-ember@0.5.9 /home/yael/.npm/42cb16f0-generator-ember-0-5-9.lock
+27 silly lockFile 98e34291--ember-generator-ember-0-5-9-tgz https://registry.npmjs.org/generator-ember/-/generator-ember-0.5.9.tgz
+28 verbose lock https://registry.npmjs.org/generator-ember/-/generator-ember-0.5.9.tgz /home/yael/.npm/98e34291--ember-generator-ember-0-5-9-tgz.lock
+29 verbose addRemoteTarball [ 'https://registry.npmjs.org/generator-ember/-/generator-ember-0.5.9.tgz',
+29 verbose addRemoteTarball   '33686d7f0c3c6b397df6ad4cfdc02477aa743523' ]
+30 info retry fetch attempt 1 at 17:29:56
+31 verbose fetch to= /home/yael/tmp/npm-4515/1375194595922-0.06239055469632149/tmp.tgz
+32 http GET https://registry.npmjs.org/generator-ember/-/generator-ember-0.5.9.tgz
+33 http 200 https://registry.npmjs.org/generator-ember/-/generator-ember-0.5.9.tgz
+34 verbose tar unpack /home/yael/tmp/npm-4515/1375194595922-0.06239055469632149/tmp.tgz
+35 silly lockFile f6052f6a-5922-0-06239055469632149-package tar:///home/yael/tmp/npm-4515/1375194595922-0.06239055469632149/package
+36 verbose lock tar:///home/yael/tmp/npm-4515/1375194595922-0.06239055469632149/package /home/yael/.npm/f6052f6a-5922-0-06239055469632149-package.lock
+37 silly lockFile d5ac6e6b-5922-0-06239055469632149-tmp-tgz tar:///home/yael/tmp/npm-4515/1375194595922-0.06239055469632149/tmp.tgz
+38 verbose lock tar:///home/yael/tmp/npm-4515/1375194595922-0.06239055469632149/tmp.tgz /home/yael/.npm/d5ac6e6b-5922-0-06239055469632149-tmp-tgz.lock
+39 silly gunzTarPerm modes [ '755', '644' ]
+40 silly gunzTarPerm extractEntry package.json
+41 silly gunzTarPerm extractEntry .npmignore
+42 silly gunzTarPerm extractEntry model/index.js
+43 silly gunzTarPerm extractEntry model/templates/base.js
+44 silly gunzTarPerm extractEntry .editorconfig
+45 silly gunzTarPerm extractEntry .travis.yml
+46 silly gunzTarPerm extractEntry app/index.js
+47 silly gunzTarPerm extractEntry app/templates/Gruntfile.js
+48 silly gunzTarPerm extractEntry app/templates/karma.conf.js
+49 silly gunzTarPerm extractEntry app/templates/_package.json
+50 silly gunzTarPerm extractEntry app/templates/bowerrc
+51 silly gunzTarPerm extractEntry app/templates/coffeeScript/app.coffee
+52 silly gunzTarPerm extractEntry app/templates/editorconfig
+53 silly gunzTarPerm extractEntry app/templates/gitattributes
+54 silly gunzTarPerm extractEntry app/templates/_bower.json
+55 silly gunzTarPerm extractEntry app/templates/hbs/application.hbs
+56 silly gunzTarPerm extractEntry app/templates/hbs/index.hbs
+57 silly gunzTarPerm extractEntry app/templates/index.html
+58 silly gunzTarPerm extractEntry app/templates/jshintrc
+59 silly gunzTarPerm extractEntry app/templates/test/_initializer.js
+60 silly gunzTarPerm extractEntry app/templates/test/initializer.coffee
+61 silly gunzTarPerm extractEntry app/templates/test/integration/_index.js
+62 silly gunzTarPerm extractEntry app/templates/test/integration/index.coffee
+63 silly gunzTarPerm extractEntry app/templates/scripts/app.js
+64 silly gunzTarPerm extractEntry app/templates/scripts/store.js
+65 silly gunzTarPerm extractEntry app/templates/scripts/libs/ember-1.0.0-rc.6.1.js
+66 silly gunzTarPerm extractEntry app/templates/scripts/libs/ember-data.js
+67 silly gunzTarPerm extractEntry app/templates/scripts/libs/handlebars.runtime.js
+68 silly gunzTarPerm extractEntry app/templates/scripts/routes/application_route.js
+69 silly gunzTarPerm extractEntry app/templates/styles/normalize.css
+70 silly gunzTarPerm extractEntry app/templates/styles/style.css
+71 silly gunzTarPerm extractEntry app/templates/styles/style_bootstrap.scss
+72 silly gunzTarPerm extractEntry app/templates/gitignore
+73 silly gunzTarPerm extractEntry contributing.md
+74 silly gunzTarPerm extractEntry controller/index.js
+75 silly gunzTarPerm extractEntry controller/templates/base.js
+76 silly gunzTarPerm extractEntry controller/templates/base_route.js
+77 silly gunzTarPerm extractEntry .gitattributes
+78 silly gunzTarPerm extractEntry .jshintrc
+79 silly gunzTarPerm extractEntry project/img/screenshots/2013_07_17.png
+80 silly gunzTarPerm extractEntry readme.md
+81 silly gunzTarPerm extractEntry router/index.js
+82 silly gunzTarPerm extractEntry router/templates/base.js
+83 silly gunzTarPerm extractEntry script/reset_dev_env.sh
+84 silly gunzTarPerm extractEntry test/test-compass.js
+85 silly gunzTarPerm extractEntry test/test-file-creation.js
+86 silly gunzTarPerm extractEntry test/test-karma.js
+87 silly gunzTarPerm extractEntry test/test-subgenerators.js
+88 silly gunzTarPerm extractEntry view/index.js
+89 silly gunzTarPerm extractEntry view/templates/base.js
+90 silly gunzTarPerm extractEntry view/templates/base.hbs
+91 silly lockFile f6052f6a-5922-0-06239055469632149-package tar:///home/yael/tmp/npm-4515/1375194595922-0.06239055469632149/package
+92 silly lockFile f6052f6a-5922-0-06239055469632149-package tar:///home/yael/tmp/npm-4515/1375194595922-0.06239055469632149/package
+93 silly lockFile d5ac6e6b-5922-0-06239055469632149-tmp-tgz tar:///home/yael/tmp/npm-4515/1375194595922-0.06239055469632149/tmp.tgz
+94 silly lockFile d5ac6e6b-5922-0-06239055469632149-tmp-tgz tar:///home/yael/tmp/npm-4515/1375194595922-0.06239055469632149/tmp.tgz
+95 verbose tar pack [ '/home/yael/.npm/generator-ember/0.5.9/package.tgz',
+95 verbose tar pack   '/home/yael/tmp/npm-4515/1375194595922-0.06239055469632149/package' ]
+96 verbose tarball /home/yael/.npm/generator-ember/0.5.9/package.tgz
+97 verbose folder /home/yael/tmp/npm-4515/1375194595922-0.06239055469632149/package
+98 silly lockFile f6052f6a-5922-0-06239055469632149-package tar:///home/yael/tmp/npm-4515/1375194595922-0.06239055469632149/package
+99 verbose lock tar:///home/yael/tmp/npm-4515/1375194595922-0.06239055469632149/package /home/yael/.npm/f6052f6a-5922-0-06239055469632149-package.lock
+100 silly lockFile 8d09ba5f-enerator-ember-0-5-9-package-tgz tar:///home/yael/.npm/generator-ember/0.5.9/package.tgz
+101 verbose lock tar:///home/yael/.npm/generator-ember/0.5.9/package.tgz /home/yael/.npm/8d09ba5f-enerator-ember-0-5-9-package-tgz.lock
+102 silly lockFile f6052f6a-5922-0-06239055469632149-package tar:///home/yael/tmp/npm-4515/1375194595922-0.06239055469632149/package
+103 silly lockFile f6052f6a-5922-0-06239055469632149-package tar:///home/yael/tmp/npm-4515/1375194595922-0.06239055469632149/package
+104 silly lockFile 8d09ba5f-enerator-ember-0-5-9-package-tgz tar:///home/yael/.npm/generator-ember/0.5.9/package.tgz
+105 silly lockFile 8d09ba5f-enerator-ember-0-5-9-package-tgz tar:///home/yael/.npm/generator-ember/0.5.9/package.tgz
+106 silly lockFile 06910e28-pm-generator-ember-0-5-9-package /home/yael/.npm/generator-ember/0.5.9/package
+107 verbose lock /home/yael/.npm/generator-ember/0.5.9/package /home/yael/.npm/06910e28-pm-generator-ember-0-5-9-package.lock
+108 silly lockFile 06910e28-pm-generator-ember-0-5-9-package /home/yael/.npm/generator-ember/0.5.9/package
+109 silly lockFile 06910e28-pm-generator-ember-0-5-9-package /home/yael/.npm/generator-ember/0.5.9/package
+110 verbose tar unpack /home/yael/.npm/generator-ember/0.5.9/package.tgz
+111 silly lockFile 8456a977-pm-generator-ember-0-5-9-package tar:///home/yael/.npm/generator-ember/0.5.9/package
+112 verbose lock tar:///home/yael/.npm/generator-ember/0.5.9/package /home/yael/.npm/8456a977-pm-generator-ember-0-5-9-package.lock
+113 silly lockFile 8d09ba5f-enerator-ember-0-5-9-package-tgz tar:///home/yael/.npm/generator-ember/0.5.9/package.tgz
+114 verbose lock tar:///home/yael/.npm/generator-ember/0.5.9/package.tgz /home/yael/.npm/8d09ba5f-enerator-ember-0-5-9-package-tgz.lock
+115 silly gunzTarPerm modes [ '755', '644' ]
+116 silly gunzTarPerm extractEntry package.json
+117 silly gunzTarPerm extractEntry .npmignore
+118 silly gunzTarPerm extractEntry model/index.js
+119 silly gunzTarPerm extractEntry model/templates/base.js
+120 silly gunzTarPerm extractEntry .editorconfig
+121 silly gunzTarPerm extractEntry .travis.yml
+122 silly gunzTarPerm extractEntry app/index.js
+123 silly gunzTarPerm extractEntry app/templates/Gruntfile.js
+124 silly gunzTarPerm extractEntry app/templates/karma.conf.js
+125 silly gunzTarPerm extractEntry app/templates/_package.json
+126 silly gunzTarPerm extractEntry app/templates/bowerrc
+127 silly gunzTarPerm extractEntry app/templates/coffeeScript/app.coffee
+128 silly gunzTarPerm extractEntry app/templates/editorconfig
+129 silly gunzTarPerm extractEntry app/templates/gitattributes
+130 silly gunzTarPerm extractEntry app/templates/_bower.json
+131 silly gunzTarPerm extractEntry app/templates/hbs/application.hbs
+132 silly gunzTarPerm extractEntry app/templates/hbs/index.hbs
+133 silly gunzTarPerm extractEntry app/templates/index.html
+134 silly gunzTarPerm extractEntry app/templates/jshintrc
+135 silly gunzTarPerm extractEntry app/templates/test/_initializer.js
+136 silly gunzTarPerm extractEntry app/templates/test/initializer.coffee
+137 silly gunzTarPerm extractEntry app/templates/test/integration/_index.js
+138 silly gunzTarPerm extractEntry app/templates/test/integration/index.coffee
+139 silly gunzTarPerm extractEntry app/templates/scripts/app.js
+140 silly gunzTarPerm extractEntry app/templates/scripts/store.js
+141 silly gunzTarPerm extractEntry app/templates/scripts/libs/ember-1.0.0-rc.6.1.js
+142 silly gunzTarPerm extractEntry app/templates/scripts/libs/ember-data.js
+143 silly gunzTarPerm extractEntry app/templates/scripts/libs/handlebars.runtime.js
+144 silly gunzTarPerm extractEntry app/templates/scripts/routes/application_route.js
+145 silly gunzTarPerm extractEntry app/templates/styles/normalize.css
+146 silly gunzTarPerm extractEntry app/templates/styles/style.css
+147 silly gunzTarPerm extractEntry app/templates/styles/style_bootstrap.scss
+148 silly gunzTarPerm extractEntry app/templates/gitignore
+149 silly gunzTarPerm extractEntry contributing.md
+150 silly gunzTarPerm extractEntry controller/index.js
+151 silly gunzTarPerm extractEntry controller/templates/base.js
+152 silly gunzTarPerm extractEntry controller/templates/base_route.js
+153 silly gunzTarPerm extractEntry .gitattributes
+154 silly gunzTarPerm extractEntry .jshintrc
+155 silly gunzTarPerm extractEntry project/img/screenshots/2013_07_17.png
+156 silly gunzTarPerm extractEntry readme.md
+157 silly gunzTarPerm extractEntry router/index.js
+158 silly gunzTarPerm extractEntry router/templates/base.js
+159 silly gunzTarPerm extractEntry script/reset_dev_env.sh
+160 silly gunzTarPerm extractEntry test/test-compass.js
+161 silly gunzTarPerm extractEntry test/test-file-creation.js
+162 silly gunzTarPerm extractEntry test/test-karma.js
+163 silly gunzTarPerm extractEntry test/test-subgenerators.js
+164 silly gunzTarPerm extractEntry view/index.js
+165 silly gunzTarPerm extractEntry view/templates/base.js
+166 silly gunzTarPerm extractEntry view/templates/base.hbs
+167 silly lockFile 8456a977-pm-generator-ember-0-5-9-package tar:///home/yael/.npm/generator-ember/0.5.9/package
+168 silly lockFile 8456a977-pm-generator-ember-0-5-9-package tar:///home/yael/.npm/generator-ember/0.5.9/package
+169 silly lockFile 8d09ba5f-enerator-ember-0-5-9-package-tgz tar:///home/yael/.npm/generator-ember/0.5.9/package.tgz
+170 silly lockFile 8d09ba5f-enerator-ember-0-5-9-package-tgz tar:///home/yael/.npm/generator-ember/0.5.9/package.tgz
+171 verbose chmod /home/yael/.npm/generator-ember/0.5.9/package.tgz 644
+172 verbose chown /home/yael/.npm/generator-ember/0.5.9/package.tgz [ 1002, 1002 ]
+173 silly lockFile 98e34291--ember-generator-ember-0-5-9-tgz https://registry.npmjs.org/generator-ember/-/generator-ember-0.5.9.tgz
+174 silly lockFile 98e34291--ember-generator-ember-0-5-9-tgz https://registry.npmjs.org/generator-ember/-/generator-ember-0.5.9.tgz
+175 silly lockFile 42cb16f0-generator-ember-0-5-9 generator-ember@0.5.9
+176 silly lockFile 42cb16f0-generator-ember-0-5-9 generator-ember@0.5.9
+177 silly lockFile 5a08f931-generator-ember generator-ember@*
+178 silly lockFile 5a08f931-generator-ember generator-ember@*
+179 info outdated updating [ [ '/usr/lib', 'generator-ember', '0.5.7', '0.5.9', '*' ] ]
+180 verbose install where,what [ '/usr/lib', [ 'generator-ember@0.5.9' ] ]
+181 verbose cache add [ 'generator-ember@0.5.9', null ]
+182 verbose cache add name=undefined spec="generator-ember@0.5.9" args=["generator-ember@0.5.9",null]
+183 verbose parsed url { protocol: null,
+183 verbose parsed url   slashes: null,
+183 verbose parsed url   auth: null,
+183 verbose parsed url   host: null,
+183 verbose parsed url   port: null,
+183 verbose parsed url   hostname: null,
+183 verbose parsed url   hash: null,
+183 verbose parsed url   search: null,
+183 verbose parsed url   query: null,
+183 verbose parsed url   pathname: 'generator-ember@0.5.9',
+183 verbose parsed url   path: 'generator-ember@0.5.9',
+183 verbose parsed url   href: 'generator-ember@0.5.9' }
+184 verbose cache add name="generator-ember" spec="0.5.9" args=["generator-ember","0.5.9"]
+185 verbose parsed url { protocol: null,
+185 verbose parsed url   slashes: null,
+185 verbose parsed url   auth: null,
+185 verbose parsed url   host: null,
+185 verbose parsed url   port: null,
+185 verbose parsed url   hostname: null,
+185 verbose parsed url   hash: null,
+185 verbose parsed url   search: null,
+185 verbose parsed url   query: null,
+185 verbose parsed url   pathname: '0.5.9',
+185 verbose parsed url   path: '0.5.9',
+185 verbose parsed url   href: '0.5.9' }
+186 verbose addNamed [ 'generator-ember', '0.5.9' ]
+187 verbose addNamed [ '0.5.9', '0.5.9' ]
+188 silly lockFile 42cb16f0-generator-ember-0-5-9 generator-ember@0.5.9
+189 verbose lock generator-ember@0.5.9 /home/yael/.npm/42cb16f0-generator-ember-0-5-9.lock
+190 verbose url raw generator-ember/0.5.9
+191 verbose url resolving [ 'https://registry.npmjs.org/', './generator-ember/0.5.9' ]
+192 verbose url resolved https://registry.npmjs.org/generator-ember/0.5.9
+193 info trying registry request attempt 1 at 17:30:02
+194 http GET https://registry.npmjs.org/generator-ember/0.5.9
+195 http 200 https://registry.npmjs.org/generator-ember/0.5.9
+196 silly registry.get cb [ 200,
+196 silly registry.get   { vary: 'Accept',
+196 silly registry.get     server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+196 silly registry.get     etag: '"4TU8A8FM8TCR4C7NYQ3JR5V1D"',
+196 silly registry.get     date: 'Tue, 30 Jul 2013 14:30:04 GMT',
+196 silly registry.get     'content-type': 'application/json',
+196 silly registry.get     'content-length': '7768' } ]
+197 silly lockFile 98e34291--ember-generator-ember-0-5-9-tgz https://registry.npmjs.org/generator-ember/-/generator-ember-0.5.9.tgz
+198 verbose lock https://registry.npmjs.org/generator-ember/-/generator-ember-0.5.9.tgz /home/yael/.npm/98e34291--ember-generator-ember-0-5-9-tgz.lock
+199 verbose addRemoteTarball [ 'https://registry.npmjs.org/generator-ember/-/generator-ember-0.5.9.tgz',
+199 verbose addRemoteTarball   '33686d7f0c3c6b397df6ad4cfdc02477aa743523' ]
+200 info retry fetch attempt 1 at 17:30:05
+201 verbose fetch to= /home/yael/tmp/npm-4515/1375194605094-0.02036136412061751/tmp.tgz
+202 http GET https://registry.npmjs.org/generator-ember/-/generator-ember-0.5.9.tgz
+203 http 200 https://registry.npmjs.org/generator-ember/-/generator-ember-0.5.9.tgz
+204 verbose tar unpack /home/yael/tmp/npm-4515/1375194605094-0.02036136412061751/tmp.tgz
+205 silly lockFile 819e1937-5094-0-02036136412061751-package tar:///home/yael/tmp/npm-4515/1375194605094-0.02036136412061751/package
+206 verbose lock tar:///home/yael/tmp/npm-4515/1375194605094-0.02036136412061751/package /home/yael/.npm/819e1937-5094-0-02036136412061751-package.lock
+207 silly lockFile 16d2e51a-5094-0-02036136412061751-tmp-tgz tar:///home/yael/tmp/npm-4515/1375194605094-0.02036136412061751/tmp.tgz
+208 verbose lock tar:///home/yael/tmp/npm-4515/1375194605094-0.02036136412061751/tmp.tgz /home/yael/.npm/16d2e51a-5094-0-02036136412061751-tmp-tgz.lock
+209 silly gunzTarPerm modes [ '755', '644' ]
+210 silly gunzTarPerm extractEntry package.json
+211 silly gunzTarPerm extractEntry .npmignore
+212 silly gunzTarPerm extractEntry model/index.js
+213 silly gunzTarPerm extractEntry model/templates/base.js
+214 silly gunzTarPerm extractEntry .editorconfig
+215 silly gunzTarPerm extractEntry .travis.yml
+216 silly gunzTarPerm extractEntry app/index.js
+217 silly gunzTarPerm extractEntry app/templates/Gruntfile.js
+218 silly gunzTarPerm extractEntry app/templates/karma.conf.js
+219 silly gunzTarPerm extractEntry app/templates/_package.json
+220 silly gunzTarPerm extractEntry app/templates/bowerrc
+221 silly gunzTarPerm extractEntry app/templates/coffeeScript/app.coffee
+222 silly gunzTarPerm extractEntry app/templates/editorconfig
+223 silly gunzTarPerm extractEntry app/templates/gitattributes
+224 silly gunzTarPerm extractEntry app/templates/_bower.json
+225 silly gunzTarPerm extractEntry app/templates/hbs/application.hbs
+226 silly gunzTarPerm extractEntry app/templates/hbs/index.hbs
+227 silly gunzTarPerm extractEntry app/templates/index.html
+228 silly gunzTarPerm extractEntry app/templates/jshintrc
+229 silly gunzTarPerm extractEntry app/templates/test/_initializer.js
+230 silly gunzTarPerm extractEntry app/templates/test/initializer.coffee
+231 silly gunzTarPerm extractEntry app/templates/test/integration/_index.js
+232 silly gunzTarPerm extractEntry app/templates/test/integration/index.coffee
+233 silly gunzTarPerm extractEntry app/templates/scripts/app.js
+234 silly gunzTarPerm extractEntry app/templates/scripts/store.js
+235 silly gunzTarPerm extractEntry app/templates/scripts/libs/ember-1.0.0-rc.6.1.js
+236 silly gunzTarPerm extractEntry app/templates/scripts/libs/ember-data.js
+237 silly gunzTarPerm extractEntry app/templates/scripts/libs/handlebars.runtime.js
+238 silly gunzTarPerm extractEntry app/templates/scripts/routes/application_route.js
+239 silly gunzTarPerm extractEntry app/templates/styles/normalize.css
+240 silly gunzTarPerm extractEntry app/templates/styles/style.css
+241 silly gunzTarPerm extractEntry app/templates/styles/style_bootstrap.scss
+242 silly gunzTarPerm extractEntry app/templates/gitignore
+243 silly gunzTarPerm extractEntry contributing.md
+244 silly gunzTarPerm extractEntry controller/index.js
+245 silly gunzTarPerm extractEntry controller/templates/base.js
+246 silly gunzTarPerm extractEntry controller/templates/base_route.js
+247 silly gunzTarPerm extractEntry .gitattributes
+248 silly gunzTarPerm extractEntry .jshintrc
+249 silly gunzTarPerm extractEntry project/img/screenshots/2013_07_17.png
+250 silly gunzTarPerm extractEntry readme.md
+251 silly gunzTarPerm extractEntry router/index.js
+252 silly gunzTarPerm extractEntry router/templates/base.js
+253 silly gunzTarPerm extractEntry script/reset_dev_env.sh
+254 silly gunzTarPerm extractEntry test/test-compass.js
+255 silly gunzTarPerm extractEntry test/test-file-creation.js
+256 silly gunzTarPerm extractEntry test/test-karma.js
+257 silly gunzTarPerm extractEntry test/test-subgenerators.js
+258 silly gunzTarPerm extractEntry view/index.js
+259 silly gunzTarPerm extractEntry view/templates/base.js
+260 silly gunzTarPerm extractEntry view/templates/base.hbs
+261 silly lockFile 819e1937-5094-0-02036136412061751-package tar:///home/yael/tmp/npm-4515/1375194605094-0.02036136412061751/package
+262 silly lockFile 819e1937-5094-0-02036136412061751-package tar:///home/yael/tmp/npm-4515/1375194605094-0.02036136412061751/package
+263 silly lockFile 16d2e51a-5094-0-02036136412061751-tmp-tgz tar:///home/yael/tmp/npm-4515/1375194605094-0.02036136412061751/tmp.tgz
+264 silly lockFile 16d2e51a-5094-0-02036136412061751-tmp-tgz tar:///home/yael/tmp/npm-4515/1375194605094-0.02036136412061751/tmp.tgz
+265 verbose tar pack [ '/home/yael/.npm/generator-ember/0.5.9/package.tgz',
+265 verbose tar pack   '/home/yael/tmp/npm-4515/1375194605094-0.02036136412061751/package' ]
+266 verbose tarball /home/yael/.npm/generator-ember/0.5.9/package.tgz
+267 verbose folder /home/yael/tmp/npm-4515/1375194605094-0.02036136412061751/package
+268 silly lockFile 819e1937-5094-0-02036136412061751-package tar:///home/yael/tmp/npm-4515/1375194605094-0.02036136412061751/package
+269 verbose lock tar:///home/yael/tmp/npm-4515/1375194605094-0.02036136412061751/package /home/yael/.npm/819e1937-5094-0-02036136412061751-package.lock
+270 silly lockFile 8d09ba5f-enerator-ember-0-5-9-package-tgz tar:///home/yael/.npm/generator-ember/0.5.9/package.tgz
+271 verbose lock tar:///home/yael/.npm/generator-ember/0.5.9/package.tgz /home/yael/.npm/8d09ba5f-enerator-ember-0-5-9-package-tgz.lock
+272 silly lockFile 819e1937-5094-0-02036136412061751-package tar:///home/yael/tmp/npm-4515/1375194605094-0.02036136412061751/package
+273 silly lockFile 819e1937-5094-0-02036136412061751-package tar:///home/yael/tmp/npm-4515/1375194605094-0.02036136412061751/package
+274 silly lockFile 8d09ba5f-enerator-ember-0-5-9-package-tgz tar:///home/yael/.npm/generator-ember/0.5.9/package.tgz
+275 silly lockFile 8d09ba5f-enerator-ember-0-5-9-package-tgz tar:///home/yael/.npm/generator-ember/0.5.9/package.tgz
+276 silly lockFile 06910e28-pm-generator-ember-0-5-9-package /home/yael/.npm/generator-ember/0.5.9/package
+277 verbose lock /home/yael/.npm/generator-ember/0.5.9/package /home/yael/.npm/06910e28-pm-generator-ember-0-5-9-package.lock
+278 silly lockFile 06910e28-pm-generator-ember-0-5-9-package /home/yael/.npm/generator-ember/0.5.9/package
+279 silly lockFile 06910e28-pm-generator-ember-0-5-9-package /home/yael/.npm/generator-ember/0.5.9/package
+280 verbose tar unpack /home/yael/.npm/generator-ember/0.5.9/package.tgz
+281 silly lockFile 8456a977-pm-generator-ember-0-5-9-package tar:///home/yael/.npm/generator-ember/0.5.9/package
+282 verbose lock tar:///home/yael/.npm/generator-ember/0.5.9/package /home/yael/.npm/8456a977-pm-generator-ember-0-5-9-package.lock
+283 silly lockFile 8d09ba5f-enerator-ember-0-5-9-package-tgz tar:///home/yael/.npm/generator-ember/0.5.9/package.tgz
+284 verbose lock tar:///home/yael/.npm/generator-ember/0.5.9/package.tgz /home/yael/.npm/8d09ba5f-enerator-ember-0-5-9-package-tgz.lock
+285 silly gunzTarPerm modes [ '755', '644' ]
+286 silly gunzTarPerm extractEntry package.json
+287 silly gunzTarPerm extractEntry .npmignore
+288 silly gunzTarPerm extractEntry model/index.js
+289 silly gunzTarPerm extractEntry model/templates/base.js
+290 silly gunzTarPerm extractEntry .editorconfig
+291 silly gunzTarPerm extractEntry .travis.yml
+292 silly gunzTarPerm extractEntry app/index.js
+293 silly gunzTarPerm extractEntry app/templates/Gruntfile.js
+294 silly gunzTarPerm extractEntry app/templates/karma.conf.js
+295 silly gunzTarPerm extractEntry app/templates/_package.json
+296 silly gunzTarPerm extractEntry app/templates/bowerrc
+297 silly gunzTarPerm extractEntry app/templates/coffeeScript/app.coffee
+298 silly gunzTarPerm extractEntry app/templates/editorconfig
+299 silly gunzTarPerm extractEntry app/templates/gitattributes
+300 silly gunzTarPerm extractEntry app/templates/_bower.json
+301 silly gunzTarPerm extractEntry app/templates/hbs/application.hbs
+302 silly gunzTarPerm extractEntry app/templates/hbs/index.hbs
+303 silly gunzTarPerm extractEntry app/templates/index.html
+304 silly gunzTarPerm extractEntry app/templates/jshintrc
+305 silly gunzTarPerm extractEntry app/templates/test/_initializer.js
+306 silly gunzTarPerm extractEntry app/templates/test/initializer.coffee
+307 silly gunzTarPerm extractEntry app/templates/test/integration/_index.js
+308 silly gunzTarPerm extractEntry app/templates/test/integration/index.coffee
+309 silly gunzTarPerm extractEntry app/templates/scripts/app.js
+310 silly gunzTarPerm extractEntry app/templates/scripts/store.js
+311 silly gunzTarPerm extractEntry app/templates/scripts/libs/ember-1.0.0-rc.6.1.js
+312 silly gunzTarPerm extractEntry app/templates/scripts/libs/ember-data.js
+313 silly gunzTarPerm extractEntry app/templates/scripts/libs/handlebars.runtime.js
+314 silly gunzTarPerm extractEntry app/templates/scripts/routes/application_route.js
+315 silly gunzTarPerm extractEntry app/templates/styles/normalize.css
+316 silly gunzTarPerm extractEntry app/templates/styles/style.css
+317 silly gunzTarPerm extractEntry app/templates/styles/style_bootstrap.scss
+318 silly gunzTarPerm extractEntry app/templates/gitignore
+319 silly gunzTarPerm extractEntry contributing.md
+320 silly gunzTarPerm extractEntry controller/index.js
+321 silly gunzTarPerm extractEntry controller/templates/base.js
+322 silly gunzTarPerm extractEntry controller/templates/base_route.js
+323 silly gunzTarPerm extractEntry .gitattributes
+324 silly gunzTarPerm extractEntry .jshintrc
+325 silly gunzTarPerm extractEntry project/img/screenshots/2013_07_17.png
+326 silly gunzTarPerm extractEntry readme.md
+327 silly gunzTarPerm extractEntry router/index.js
+328 silly gunzTarPerm extractEntry router/templates/base.js
+329 silly gunzTarPerm extractEntry script/reset_dev_env.sh
+330 silly gunzTarPerm extractEntry test/test-compass.js
+331 silly gunzTarPerm extractEntry test/test-file-creation.js
+332 silly gunzTarPerm extractEntry test/test-karma.js
+333 silly gunzTarPerm extractEntry test/test-subgenerators.js
+334 silly gunzTarPerm extractEntry view/index.js
+335 silly gunzTarPerm extractEntry view/templates/base.js
+336 silly gunzTarPerm extractEntry view/templates/base.hbs
+337 silly lockFile 8456a977-pm-generator-ember-0-5-9-package tar:///home/yael/.npm/generator-ember/0.5.9/package
+338 silly lockFile 8456a977-pm-generator-ember-0-5-9-package tar:///home/yael/.npm/generator-ember/0.5.9/package
+339 silly lockFile 8d09ba5f-enerator-ember-0-5-9-package-tgz tar:///home/yael/.npm/generator-ember/0.5.9/package.tgz
+340 silly lockFile 8d09ba5f-enerator-ember-0-5-9-package-tgz tar:///home/yael/.npm/generator-ember/0.5.9/package.tgz
+341 verbose chmod /home/yael/.npm/generator-ember/0.5.9/package.tgz 644
+342 verbose chown /home/yael/.npm/generator-ember/0.5.9/package.tgz [ 1002, 1002 ]
+343 silly lockFile 98e34291--ember-generator-ember-0-5-9-tgz https://registry.npmjs.org/generator-ember/-/generator-ember-0.5.9.tgz
+344 silly lockFile 98e34291--ember-generator-ember-0-5-9-tgz https://registry.npmjs.org/generator-ember/-/generator-ember-0.5.9.tgz
+345 silly lockFile 42cb16f0-generator-ember-0-5-9 generator-ember@0.5.9
+346 silly lockFile 42cb16f0-generator-ember-0-5-9 generator-ember@0.5.9
+347 silly resolved [ { name: 'generator-ember',
+347 silly resolved     version: '0.5.9',
+347 silly resolved     description: 'Yeoman generator for Ember',
+347 silly resolved     keywords:
+347 silly resolved      [ 'yeoman-generator',
+347 silly resolved        'scaffold',
+347 silly resolved        'generator',
+347 silly resolved        'framework',
+347 silly resolved        'mvc',
+347 silly resolved        'ember' ],
+347 silly resolved     homepage: 'https://github.com/yeoman/generator-ember',
+347 silly resolved     bugs: { url: 'https://github.com/yeoman/generator-ember/issues' },
+347 silly resolved     author: { name: 'Chrome Developer Relations' },
+347 silly resolved     main: 'app/index.js',
+347 silly resolved     repository:
+347 silly resolved      { type: 'git',
+347 silly resolved        url: 'git://github.com/yeoman/generator-ember.git' },
+347 silly resolved     scripts: { test: 'mocha --reporter spec' },
+347 silly resolved     dependencies: { 'yeoman-generator': '~0.12.0' },
+347 silly resolved     devDependencies: { mocha: '~1.12.0' },
+347 silly resolved     peerDependencies: { 'generator-mocha': '~0.1.1', yo: '>=1.0.0-rc.1.1' },
+347 silly resolved     engines: { node: '>=0.8.0', npm: '>=1.2.10' },
+347 silly resolved     licenses: [ [Object] ],
+347 silly resolved     readme: '# Ember.js Generator [![Build Status](https://secure.travis-ci.org/yeoman/generator-ember.png?branch=master)](http://travis-ci.org/yeoman/generator-ember)\n\nMaintainer: [Anthony Bull](https://github.com/inkredabull)\n\nThe scaffolding tool for Ember.js apps.\n\n![ScreenShot](https://raw.github.com/yeoman/generator-ember/master/project/img/screenshots/2013_07_17.png)\n\n## Table of Contents\n\n* [Pre-reqs](#pre-reqs)\n* [Usage](#usage)\n* [Generators](#generators)\n  * [ember](#ember)\n  * [ember-view](#ember-view)\n  * [ember-controller](#ember-controller)\n  * [ember-model](#ember-model)\n* [Options](#options)\n* [Troubleshooting](#troubleshooting)\n* [History](#history)\n* [TODO](#todo)\n* [Contribute](#contribute)\n  * [Basics](#basics)\n  * [Tips](#tips)\n* [Background](#background)\n* [License](#license)\n\n## Pre-reqs\n\n* [npm](http://nodejs.org/)\n* `npm install -g grunt-contrib-compass`\n* Ruby \n \nYou should have one path each for:\n\n  `which ruby && which compass`\n\n## Usage\n\n* `npm install -g generator-ember`\n* `mkdir webapp && cd webapp`\n* `yo ember`\n* `npm install -g grunt-mocha` \n* `grunt server`\n\nA welcome page should appear in your browser.\n\n## Generators\n\nAvailable generators:\n\n* ember \n* ember:view\n* ember:controller\n* ember:model\n\n### ember\n\nCreates the basic infrastructure for your app. \n\n### ember:view\n\nCreates a view and template given an arg, as in\n\n  `yo ember:view Foo`\n\n__KNOWN ISSUE: IF YOU ADD A NEW VIEW, REGARDLESS OF WITH WHICH GENERATOR, YOU HAVE TO RESTART THE SERVER.__ \n\n### ember:controller\n\nCreates a view, handlebar, controller and route given an arg, as in:\n\n  `yo ember:controller Bar`\n\n(and updates router.js, overwrite when prompted)\n\nsee: http://localhost:9000/#/bar\n\n### ember:model\n\nCreates a model, view, handlebar, controller, and route given an arg, as in: \n\n`yo ember:model Baz name:string postal_code:number`\n\nsee http://localhost:9000/#/baz\n \n## Options\n\n* `--skip-install`\n\n  Skips the automatic execution of `bower` and `npm` after scaffolding has finished.\n\n* `--test-framework=[framework]`\n\n  Defaults to `mocha`. Can be switched for another supported testing framework like `jasmine`.\n\n* `--coffee`\n\n  Enable support for CoffeeScript.\n\n* `--karma`\n\n  Enables support for karma test runner\n\n## Testing\nTesting your app is as simple as running `grunt test`. The generator ships with the\n[karma test runner](http://karma-runner.github.io/0.8/index.html) for running the tests. Integration\ntests are written with [ember-testing](https://github.com/emberjs/ember.js/tree/master/packages/ember-testing)\nand preferably mocha. Karma is highly configurable and you can take a look at the varity of options\non [its website](http://karma-runner.github.io/0.8/index.html).\n\n## Troubleshooting\n\n### Command not found\n\nManifests as: `-bash: yo: command not found`\n\nYou need to make sure that npm is on your path.  Add the following to your .bash_profile (or .bashrc):\n\n`PATH=/usr/local/share/npm/bin:$PATH`\n\n### templateName issues\n\nManifests as: `You specified the templateName ... but it did not exist.`\n\nYou probably added a view; restart the server.\n\n## History\n\n### 0.5.9 (2013-07-25)\n\n* modified for [CVE-2013-4170](http://emberjs.com/blog/2013/07/25/ember-1-0-rc6-1-rc5-1-rc4-1-rc3-1-rc2-1-and-rc1-1-released.html)   \n\n### 0.5.8 (2013-07-25)\n\n* fixed karma-based app gen \n* simplication of install \n\n### 0.5.7 (2013-07-18)\n\n* abandon dependencies changes; not working\n\n### 0.5.6 (2013-07-18)\n\n* change dependencies for npm\n\n### 0.5.5 (2013-07-18)\n\n* more dependency-moving out of readme \n\n### 0.5.4 (2013-07-18)\n\n* moving dependencies out of readme \n\n### 0.5.3 (2013-07-17)\n\n* new look!\n* tests!\n\n### 0.5.2 (2013-07-15)\n\n* Fixed [#79](https://github.com/yeoman/generator-ember/issues/79) (srsly considering dropping CoffeeScript support for now)\n\n### 0.5.1 (2013-07-15)\n\n* Re-introduced @fayimora\'s testing improvement; now working with `grunt test`\n* documentation updates\n\n### 0.5.0 (2013-07-13)\n\n* Added basic scaffolding\n* By default, include Ember Data\n\n### 0.4.1 (2013-07-13)\n\n* Reverted changes for testing improvement\n\n### 0.4.0 (2013-07-11)\n\n* Added testing improvement\n* Upgraded to RC6\n* Upgraded to grunt-contrib-compass 0.3.0\n\n### 0.3.1 (2013-06-18)\n\n* Added install step to address [PhantomJS issue](https://github.com/yeoman/generator-webapp/issues/92)\n\n### 0.3.0 (2013-06-16)\n\n* Upgraded to Ember 1.0 RC5\n* Support for scaffolding out CoffeeScript via `--coffee`\n* Support for jasmine as alternative test framework via `--test-framework`\n* Automatic script inclusions via [`grunt-neuter`](https://github.com/trek/grunt-neuter)\n* New prompt\n\n## TODO\n\n* Change tests to instantiate and test objects instead of grepping for text\n* DRY up/refactor tests\n* Consider ES6 as base structure\n* Remove Ruby dependency\n\n## Contribute\n\n### Basics\n\nSee the [contributing docs](https://github.com/yeoman/yeoman/blob/master/contributing.md)\n\nWhen submitting an issue, please follow the [guidelines](https://github.com/yeoman/yeoman/blob/master/contributing.md#issue-submission). Especially important is to make sure Yeoman is up-to-date, and providing the command or commands that cause the issue.\n\nWhen submitting a bugfix, write a test that exposes the bug and fails before applying your fix. Submit the test alongside the fix.\n\nWhen submitting a new feature, add tests that cover the feature.\n\n### Tips\n\nHere are some of the techniques I use; maybe they\'re useful for you.\n\nWhen developing...\n\n* in generator-ember dir, `npm link` to use what\'s in the local repo for `yo ember`\n* wipe the example webapp dir clean (`cd .. && rm -rf webapp`) from time-to-time to ensure the code output is coming from the latest generator (will re-install everything via npm, so be forewarned)\n* script/reset_dev_env.sh is there to help when you don\'t want to wipe and reinstall a test dir with Bower and Node modules again-and-again; read it and understand it before you use it. It\'s good\nif you want to smoke-test changes, bad if you update Bower and/or Node\nmods (ignores removing their subdirs.)\n\n## Background \n\n* Originally inspired by the [Ember Starter Kit](https://github.com/emberjs/starter-kit/archive/v1.0.0-rc.6.zip)\n* Taking influence from [ember_data_example](https://github.com/dgeb/ember_data_example)\n\n## License\n\n[BSD license](http://opensource.org/licenses/bsd-license.php)\n',
+347 silly resolved     readmeFilename: 'readme.md',
+347 silly resolved     _id: 'generator-ember@0.5.9',
+347 silly resolved     dist: { shasum: '78c0fcaaf9ed4c19b49e02c0cf01ee7b5f350b1e' },
+347 silly resolved     _from: 'generator-ember@0.5.9',
+347 silly resolved     _resolved: 'https://registry.npmjs.org/generator-ember/-/generator-ember-0.5.9.tgz' } ]
+348 info install generator-ember@0.5.9 into /usr/lib
+349 info installOne generator-ember@0.5.9
+350 info /usr/lib/node_modules/generator-ember unbuild
+351 info preuninstall generator-ember@0.5.7
+352 info uninstall generator-ember@0.5.7
+353 verbose true,/usr/lib/node_modules,/usr/lib/node_modules unbuild generator-ember@0.5.7
+354 info postuninstall generator-ember@0.5.7
+355 info /usr/lib/node_modules/generator-ember unbuild
+356 info preuninstall generator-ember@0.5.7
+357 info uninstall generator-ember@0.5.7
+358 verbose true,/usr/lib/node_modules,/usr/lib/node_modules unbuild generator-ember@0.5.7
+359 info postuninstall generator-ember@0.5.7
+360 error error rolling back Error: EACCES, unlink '/usr/lib/node_modules/generator-ember'
+360 error error rolling back  generator-ember@0.5.9 { [Error: EACCES, unlink '/usr/lib/node_modules/generator-ember']
+360 error error rolling back   errno: 3,
+360 error error rolling back   code: 'EACCES',
+360 error error rolling back   path: '/usr/lib/node_modules/generator-ember' }
+361 error Error: EACCES, unlink '/usr/lib/node_modules/generator-ember'
+361 error  { [Error: EACCES, unlink '/usr/lib/node_modules/generator-ember']
+361 error   errno: 3,
+361 error   code: 'EACCES',
+361 error   path: '/usr/lib/node_modules/generator-ember' }
+362 error Please try running this command again as root/Administrator.
+363 error System Linux 3.5.0-23-generic
+364 error command "/usr/bin/node" "/usr/bin/npm" "update" "-g" "generator-ember"
+365 error cwd /home/yael/companysite-frontend/companysite_frontend_app/static
+366 error node -v v0.10.13
+367 error npm -v 1.3.2
+368 error path /usr/lib/node_modules/generator-ember
+369 error code EACCES
+370 error errno 3
+371 error stack Error: EACCES, unlink '/usr/lib/node_modules/generator-ember'
+372 verbose exit [ 3, true ]

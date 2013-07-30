@@ -3,7 +3,7 @@ Company.ContactController = Ember.ObjectController.extend(Ember.Evented,{
 
 	email: null,
 	txt: null,
-	statusval:null,
+	statusvalue:null,
 
   	save: function(viewelement) {
 	  	email = this.get('email');
@@ -16,12 +16,12 @@ Company.ContactController = Ember.ObjectController.extend(Ember.Evented,{
 	  		txt: txt,
 	  		},
 	  		success:function(data){
-				statusval=data.success;
-	  			xthis.fire('sendmsg');
+				statusvalue=data.success;
+	  			xthis.fire('sendmsg',true);
 	  		},
 	  		error:function(data){
-				statusval=data.success;
-	  			msgalert();
+				statusvalue=data.success;
+	  			xthis.fire('sendmsg',false);
 	  		},
 	  	};
 	  	Company.get('store.adapter').ajax(
