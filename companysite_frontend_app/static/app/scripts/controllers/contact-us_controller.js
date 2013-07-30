@@ -1,5 +1,5 @@
 
-Company.ContactController = Ember.ObjectController.extend(Ember.Evented,{
+Company.ContactController = Ember.ObjectController.extend({
 
 	email: null,
 	txt: null,
@@ -8,28 +8,20 @@ Company.ContactController = Ember.ObjectController.extend(Ember.Evented,{
   	save: function(viewelement) {
 	  	email = this.get('email');
 	  	txt= this.get('txt');
-	  	this.on('sendmsg',  viewelement, 'msgalert');
-	  	xthis = this;
   		var hash={
-	  	data:{
-	  		email : email,
-	  		txt: txt,
-	  		},
+	  		data:{
+		  		email : email,
+		  		message: txt,
+		  		},
 	  		success:function(data){
-				statusvalue=data.success;
-	  			xthis.fire('sendmsg',true);
-	  		},
+	  			viewelement.msgalert(true, data.message);
+	  			},
 	  		error:function(data){
-				statusvalue=data.success;
-	  			xthis.fire('sendmsg',false);
-	  		},
-	  	};
+	  			viewelement.msgalert(false, data.message);
+	  			},
+	  		};
 	  	Company.get('store.adapter').ajax(
-	  		Company.contact_url,
-	  		'POST',
-	  		hash
-	  	); 	
-	}
+	  			Company.contact_url,'POST',hash);
+		}
 });
-
 

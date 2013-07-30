@@ -13,6 +13,8 @@ html, body {
     margin:  0 auto -60px;
 	}
 
-.alert-success, .alert-error, {
-	display: none;
+.status{
+	.alert{
+		display: none;
+	}
 }
