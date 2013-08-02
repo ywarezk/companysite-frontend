@@ -21,3 +21,20 @@
 			top:20px;
 		};
 }
+#footer{
+		.container{
+			height: 20px;
+		};
+		ul{
+			@include no-bullets;
+		};
+		.nerdeez-copyright{
+			position: relative;
+			left:55px;
+			top:10px;
+		};
+		.font-color{
+			position: relative;
+			bottom: 10px;
+		};
+}

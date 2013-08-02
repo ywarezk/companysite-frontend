@@ -40,3 +40,35 @@
     	top: 21px;
 	};
 }
+
+._header-theme{
+	#header{
+		ul{
+			position: relative;
+	    	top: 32px;
+		};
+		.logo{
+			position: relative;
+	    	top: 13px;
+		    padding-left: 10px;
+			};
+		.logo-txt{
+		    font-size: 27px;
+		    line-height: 26px;
+		    position: relative;
+		    top: 20px;
+		    font-family:'Josefin Sans', Helvetica, Arial, sans-serif;
+		    color:white;
+		};
+		#main-nav{
+			a.active{
+			    background: none repeat scroll 0 0 #FFFFFF;
+			    border-bottom-color: #FFFFFF;
+			    box-shadow: none;
+			    color: #610000;
+			    filter: none !important;
+			    text-shadow: none;
+			};
+		};
+	};
+}
