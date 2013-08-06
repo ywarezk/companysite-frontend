@@ -1,9 +1,11 @@
-._header{
-  	@include background(linear-gradient(to bottom, #3D3D3D, #454545));
-	@include border-radius(0 0 10px 10px);
+#header{
+	ul{
+		position: relative;
+    	top: 32px;
+	};
 	.logo{
 		position: relative;
-    	top: 18px;
+    	top: 13px;
 	    padding-left: 10px;
 		};
 	.logo-txt{
@@ -14,29 +16,14 @@
 	    font-family:'Josefin Sans', Helvetica, Arial, sans-serif;
 	    color:white;
 	};
-	.nav{
-	    padding-top: 35px;
-	    li{
-			.active, .active:hover{
-				background-color: #F54D70;
-					color: white;
-		    		i{
-		    		  color: white;
-		    		 };
-				};
-	     	a:hover{
-		    	color:black;
-		    		i{
-		    		  color: #F54D70;
-		    		 };
-		   		 };
-		  };
+	#main-nav{
+		a.active{
+		    background: none repeat scroll 0 0 #FFFFFF;
+		    border-bottom-color: #FFFFFF;
+		    box-shadow: none;
+		    color: #610000;
+		    filter: none !important;
+		    text-shadow: none;
 		};
-	a, a:hover .active{
-		color: white;
-	};
-	ul{
-		position: relative;
-    	top: 21px;
 	};
 }

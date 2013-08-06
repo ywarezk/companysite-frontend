@@ -1,12 +1,9 @@
 
 Ember.View.reopen({
 
-	didInsertElement: function() {
-		this._super();
-        $(".validate").validationEngine('attach');
-	}
-});
+	staticUrl: STATIC_URL,
 
-Ember.TextSupport.reopen({
- 	attributeBindings: ["required"]
+	didInsertElement: function() {
+        $('form.validate').validationEngine('attach');
+	}
 });

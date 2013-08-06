@@ -10,7 +10,7 @@
 
 Company.ContactView = Ember.View.extend({
 
-	saveto:function(){
+	save:function(){
 		this.controller.save(this);
 	},
 

@@ -1,22 +1,14 @@
-/**
- * stylesheet for the contact page
- *
- * Created August 2nd, 2013
- * @author: Yariv Katz
- * @copyright: nerdeez Ltd.
- * @version: 1.0
- */
- 
- .contact{
-    .field{
+.contact {
+    .field {
         label{
             display: block !important;
         }
-        input[type="text"]{
+        input{
             padding-left: 12px;
-            width: 91%;
+            width: 94%;
         }
         textarea{
+            margin-bottom: 0px;
             padding-left: 12px;
             width: 94%;
             resize:none;
@@ -46,7 +38,13 @@
             }
         }
     }
-    form{
+    form {
         margin-bottom: 0 !important;
     }
+    .charCounter {
+		color: #BABABA;
+		.charsRemaining {
+			display : inline;
+		}
+	}
  }
