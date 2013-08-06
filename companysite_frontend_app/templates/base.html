@@ -7,14 +7,23 @@
         <!-- build:css styles/main.css -->
         <link rel="stylesheet" href="{{STATIC_URL}}.tmp/styles/style.css">
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{STATIC_URL}}app/styles/jquery-styles/validationEngine.jquery.css">
         <!-- endbuild -->
+
+        <!-- Fonts: Goudy+Bookletter+1911, Raleway,Dancing+Script,Josefin+Sans-->
+        <link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" type="text/css">
+        <!-- endbuild -->
+
 	</head>
 	<body>
 
         
         <!-- begin global variables -->
 		<script type="text/javascript">
-			var STATIC_URL = '{{STATIC_URL}}app/';
+			var STATIC_URL = '{{STATIC_URL}}';
 			var SERVER_URL = '{{SERVER_URL}}';
 		</script>
         <!-- end global variables -->
@@ -25,24 +34,19 @@
         <div class="footer">
             <div class="container">
                 <div class="row font-color">
-                    <div class="span2 nerdeez-logo">
-                        <div class="logo-textarea"> Created by: </div>
-                        <img src="{{STATIC_URL}}app/img/logo.png">
-                    </div>
-                    <div class="nerdeez-links span3 offset3">
-                        <ul class="nav nav-pills">
-                            <li>    
-                                <a href="#/privacy">Privacy</a>
-                            </li>
-                            <li>
-                                <a href="#/terms">Terms &amp; Conditions</a>
-                            </li>
+                    <div class="span3">
+                        <ul>
+                            <li class="span1"><a href="index.html">Home</a></li>
+                            <li class="span1"><a href="#">About</a></li>
+                            <li class="span1"><a href="/#/contact">Contact Us</a></li>
+                            <li class="span1"><a href="#">Articles</a></li>
+                            <li class="span1"><a href="#">Gallery</a></li>
                         </ul>
                     </div>
-                    <div class="nerdeez-copyright span2 offset2 pull-right">
+                    <div class="nerdeez-copyright span2 pull-right">
                         Nerdeez &#169; 2013
                     </div>
-                </div>              
+                </div>
             </div>
         </div>
 
@@ -51,6 +55,8 @@
         <script src="{{STATIC_URL}}app/bower_components/handlebars/handlebars.runtime.js"></script>
         <script src="{{STATIC_URL}}app/bower_components/ember/ember.js"></script>
         <script src="{{STATIC_URL}}app/bower_components/ember-data-shim/ember-data.js"></script>
+        <script src="{{STATIC_URL}}app/jquery/jquery.validationEngine-en.js" type="text/javascript" charset="utf-8"></script>
+        <script src="{{STATIC_URL}}app/jquery/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
         <!-- endbuild -->
 
         <!-- build:js(.tmp) scripts/templates.js -->

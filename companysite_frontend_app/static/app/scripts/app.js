@@ -5,24 +5,29 @@ var Company = window.Company = Ember.Application.create({
 	//@member {string} constant holds the dom element which the application be injected to
     rootElement: '#wrap',
 
-    contact_url: CONTACT_URL
+    server_url: SERVER_URL,
     
 });
 
-
-//controllers
-require('scripts/controllers/*');
-
-//views
-require('scripts/views/*');
-
-//routes
-require('scripts/routes/company-routes');
 
 //store
 require('scripts/nerdeez-ember/tastypie_serializer');
 require('scripts/nerdeez-ember/tastypie_adapter');
 require('scripts/nerdeez-ember/porthole.min');
 require('scripts/nerdeez-ember/wormhole');
-require('scripts/nerdeez-ember/status-message_helper');
 require('scripts/store/company-store');
+
+//handlebars-helpers
+require('scripts/nerdeez-ember/handlebars_helpers');
+
+//jquery
+require("bower_components/jquery plugins/jquery.tinylimiter");
+
+//routes
+require('scripts/routes/company-routes');
+
+//controllers
+require('scripts/controllers/*');
+
+//views
+require('scripts/views/*');

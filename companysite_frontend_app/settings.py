@@ -1,6 +1,6 @@
 # Django settings for companysite_frontend_app project.
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
