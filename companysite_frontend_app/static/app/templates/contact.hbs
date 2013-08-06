@@ -1,16 +1,18 @@
 <div class="contact">
 	<div class="account-container login stacked">
 		<div class="content clearfix">
-			<form class="validate" {{action "save" target="view" on="submit"}}>
+			<form class="validate" {{action submitForm target="controller" on="submit"}} novalidate>
 				<h1>Contact Us</h1>
 				<div class="login-fields">
 					<div class="field">
 						<label for="emailinput">Email Address (not required)</label> 
 					    {{
 						    view Ember.TextField
-						    valueBinding="controller.email"
+						    valueBinding="controller.mailAddress"
 						    class="validate[custom[email]]"
 						    placeholder="Email Address (Not Required)"
+							name="emailinput"
+							type="email"
 						}}
 					</div>
 					<div class="field">
@@ -20,6 +22,9 @@
 					    	valueBinding="controller.mailContent"
 					    	class="validate[required]"
 					    	placeholder="Enter Message (Required)"
+					    	name="msginput"
+					    	required="true"
+					    	type="text"
 					    }}
 					</div>
 				</div>

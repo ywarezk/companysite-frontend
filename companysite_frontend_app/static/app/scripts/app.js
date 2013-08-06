@@ -26,6 +26,9 @@ require("bower_components/jquery plugins/jquery.tinylimiter");
 //routes
 require('scripts/routes/company-routes');
 
+//models
+require('scripts/models/*');
+
 //controllers
 require('scripts/controllers/*');
 

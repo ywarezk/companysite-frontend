@@ -1,0 +1,27 @@
+
+
+
+<div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
+	<div class="carousel-inner">
+		{{#each controller}}
+		{{isFirst this controller.content html='<div class="item active">'}} <!-- If first item mark div as active -->
+		{{notFirst this controller.content html='<div class="item">'}} <!-- else don't mark it as active -->
+  			<img src={{unbound image}} alt="" /> 
+  			<div class="carousel-caption">
+    			<p>{{description}}</p>
+  			</div>
+		</div> <!-- /.item -->
+		{{/each}}
+	</div> <!-- /.carousel-inner -->
+	<!--  Next and Previous controls below
+    href values must reference the id for this carousel -->
+	<a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+	<a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+</div><!-- /.carousel -->
+
+<div id="this-carousel-id" class="carousel slide">
+	<div class="carousel-inner">
+		<div id="icarousel">
+		</div>
+	</div>
+</div>

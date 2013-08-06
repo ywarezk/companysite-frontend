@@ -7,3 +7,7 @@ Ember.View.reopen({
         $('form.validate').validationEngine('attach');
 	}
 });
+
+Ember.TextSupport.reopen({
+	attributeBindings: ["required"]
+});

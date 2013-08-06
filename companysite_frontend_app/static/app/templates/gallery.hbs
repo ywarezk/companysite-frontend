@@ -1,0 +1,22 @@
+<!--
+
+Holds the html of the gallery
+author: Doron Nachshon
+copyright: nerdeez.com
+version: 1.0
+
+-->
+
+<div class="flatpage">
+	<div class="row">
+		<div class="span10">
+			{{#each controller}}
+				<div>{{title}}</div>
+				<div>{{technologies}}</div>
+				<div>{{description}}</div>
+				<div>{{{html}}}</div>
+				<div><img src={{unbound image}}></div>
+			{{/each}}
+		</div>
+	</div>
+</div>

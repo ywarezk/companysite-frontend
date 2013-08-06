@@ -43,7 +43,7 @@ Company.ContactController = Ember.Controller.extend({
 
 
     mailContent: null,
-    email: null,
+    mailAddress: null,
 
     textLimit: 100,
     
@@ -54,7 +54,7 @@ Company.ContactController = Ember.Controller.extend({
      * @params string mail the mail of the user
      * @params string the user phone number
      */
-    save: function(success, error){
+    submitForm: function(success, error){
         this.set('isLoading', true);
         message = this.get('mailContent');
         mail = this.get('mailAddress');
