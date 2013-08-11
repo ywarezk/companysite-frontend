@@ -23,6 +23,7 @@ require('scripts/nerdeez-ember/handlebars_helpers');
 //jquery
 require("bower_components/jquery plugins/jquery.tinylimiter");
 
+
 //routes
 require('scripts/routes/company-routes');
 
@@ -33,4 +34,7 @@ require('scripts/models/*');
 require('scripts/controllers/*');
 
 //views
-require('scripts/views/*');
+require('scripts/views/company-view');
+require('scripts/views/flatpage-view');
+require('scripts/views/home-view');
+require('scripts/views/gallery-view');

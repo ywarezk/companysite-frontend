@@ -7,16 +7,26 @@ version: 1.0
 
 -->
 
-<div class="flatpage">
-	<div class="row">
-		<div class="span10">
-			{{#each controller}}
-				<div>{{title}}</div>
-				<div>{{technologies}}</div>
-				<div>{{description}}</div>
-				<div>{{{html}}}</div>
-				<div><img src={{unbound image}}></div>
-			{{/each}}
-		</div>
-	</div>
+<div id="ads-data">
+   	<div class="barousel_image">
+		<img src="" class="default" />
+	{{#each controller}}
+		<img src={{unbound image}} />
+    {{/each}}
+    </div>
+    <div class="barousel_content">
+    	<div class="default">
+    		[any html content]
+    	</div>
+    	{{#each controller}}
+        <div>
+        	{{description}}
+        </div>
+        {{/each}}
+    </div>
+    <div class="barousel_nav">
+    </div>
+</div>
+
+<div id="any_id" class="barousel"> 
 </div>

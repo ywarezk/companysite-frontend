@@ -24,7 +24,7 @@ Company.Router.map(function () {
  */
 Company.HomeRoute = Ember.Route.extend({
 	model: function(param){
-		return Company.Gallery.find();
+		return Company.Gallery.find({});
 	}
 });
 
@@ -60,6 +60,6 @@ Company.TermsRoute = Ember.Route.extend({
  */
 Company.GalleryRoute = Ember.Route.extend({
 	model: function(param) {
-		return Company.Gallery.find();
+		return Company.Gallery.find({});
 	}
 });
