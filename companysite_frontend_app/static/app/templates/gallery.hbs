@@ -9,26 +9,20 @@ version: 1.0
 
 <div class="gallery">
     <div id="ads-data">
-       	<div class="barousel_image">
-    		<img src={{unbound "view.staticUrl"}}img/logo.png class="default" />
-    	{{#each controller}}
-    		<img src={{unbound image}} />
-        {{/each}}
-        </div>
-        <div class="barousel_content">
-        	<div class="default">
-        		[any html content]
-        	</div>
-        	{{#each controller}}
-            <div>
-            	{{description}}
-            </div>
+        <div class="slider">
+            {{#each controller}}
+            <div class="slide"><img src={{unbound image}} /></div>
             {{/each}}
         </div>
-        <div class="barousel_nav">
+
+        <div class="accordion">
+            {{#each controller}}
+            <div class="header">{{title}}</div>
+            <div class="content">{{description}}</div>
+            {{/each}}
         </div>
     </div>
 
-    <div id="any_id" class="barousel account-container"> 
+    <div id="slidorion" class="slidorion">
     </div>
 </div>

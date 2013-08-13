@@ -11,8 +11,13 @@ Company.GalleryView = Ember.View.extend({
 		var html = $(noScript);
 		html.find('THISISNOTASCRIPTREALLY').remove();
 
-
-		$('#any_id').html(html.html());
-		$('#any_id').barousel();
+		$('#slidorion').html(html.html());
+		
+		$('#slidorion').slidorion({
+			speed: 1000,
+			interval: 8000,
+			effect: 'slideRandom'
+		});
+		
 	}
 });
