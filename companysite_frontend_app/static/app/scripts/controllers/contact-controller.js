@@ -79,8 +79,8 @@ Company.ContactController = Ember.Controller.extend({
             xthis.set('isLoading', false);
         }
 
-        Nerdeez.get('store.adapter').ajax(
-	        	Nerdeez.server_url + '/api/v1/utilities/contact/',
+        Company.get('store.adapter').ajax(
+	        	Company.server_url + '/api/v1/utilities/contact/',
 	        	'POST',
 	        	{
 	        		data: {message: message, mail: mail},
