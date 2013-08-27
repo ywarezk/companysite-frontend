@@ -1,17 +1,17 @@
 <!--
 
-Holds the html of the gallery
+Holds the html of the company showcase
 author: Doron Nachshon
 copyright: nerdeez.com
 version: 1.0
 
 -->
 
-<div class="gallery">
+<div class="showcase">
     <div id="ads-data">
         <div class="slider">
             {{#each controller}}
-            <div class="slide"><img src={{unbound image}} /></div>
+            <div class="slide">{{#linkTo 'project' this}}<img src={{unbound image}} />{{/linkTo}}</div>
             {{/each}}
         </div>
 

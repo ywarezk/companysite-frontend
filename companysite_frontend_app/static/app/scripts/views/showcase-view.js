@@ -2,7 +2,7 @@
  * the view for the gallery
  *
  */
-Company.GalleryView = Ember.View.extend({
+Company.ShowcaseView = Ember.View.extend({
 	didInsertElement: function(){ 
 
 		var stringOfHtml = $('#ads-data').html();

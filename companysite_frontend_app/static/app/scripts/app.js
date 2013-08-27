@@ -36,4 +36,4 @@ require('scripts/controllers/*');
 //views
 require('scripts/views/company-view');
 require('scripts/views/flatpage-view');
-require('scripts/views/gallery-view');
+require('scripts/views/showcase-view');

@@ -6,15 +6,15 @@
 * @author: Yariv Katz
 */
 
-Company.Flatpage = Ember.View.extend({
+Company.FlatpageBase = Ember.View.extend({
 	templateName: 'flatpage'
 });
 
-Company.AboutView = Company.Flatpage.extend({
+Company.AboutView = Company.FlatpageBase.extend({
 });
 
-Company.PrivacyView = Company.Flatpage.extend({
+Company.PrivacyView = Company.FlatpageBase.extend({
 });
 
-Company.TermsView = Company.Flatpage.extend({
+Company.TermsView = Company.FlatpageBase.extend({
 });

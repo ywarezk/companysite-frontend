@@ -15,7 +15,8 @@ Company.Router.map(function () {
 	this.route('terms');
 	this.route('privacy');
 	this.route('contact');
-	this.route('gallery');
+	this.resource('showcase');
+	this.resource('project', {path : ':project_id'});
 });
 
 
@@ -58,7 +59,7 @@ Company.TermsRoute = Ember.Route.extend({
 /**
  * route to gallery page
  */
-Company.GalleryRoute = Ember.Route.extend({
+Company.ShowcaseRoute = Ember.Route.extend({
 	model: function(param) {
 		return Company.Gallery.find({});
 	}
