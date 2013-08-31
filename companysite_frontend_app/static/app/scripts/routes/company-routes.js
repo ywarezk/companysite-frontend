@@ -17,6 +17,7 @@ Company.Router.map(function () {
 	this.route('contact');
 	this.resource('showcase');
 	this.resource('project', {path : ':project_id'});
+	this.resource('workers', {path: ':workers_id'});
 });
 
 
