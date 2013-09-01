@@ -1,0 +1,17 @@
+.workers {
+	.workers-list {
+		list-style: none outside none;
+    	margin: 3em 0 0;
+    	padding: 0;
+
+    	.workers-text {
+    		display: table-cell;
+    		vertical-align: top;
+    	}
+
+    	li {
+    		display: table;
+    		margin-bottom: 2em;
+    	}
+	}
+}

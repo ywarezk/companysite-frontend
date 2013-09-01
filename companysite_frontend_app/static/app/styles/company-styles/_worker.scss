@@ -1,0 +1,50 @@
+.worker {
+
+	.top-buffer {
+		margin-top: 90px;
+	}
+	
+	.trainer-info {
+	    background-color: white;
+	    margin-left: 1px;
+	    width: 240px;
+	    
+	    .trainer-container {
+			margin: 0 auto;
+    		width: 150px;
+
+    		.trainer-container-image {
+			    height: 169px;
+			    position: relative;
+			    width: 100%;
+			    top: -70px;
+			}
+		}
+
+		.trainer-container-name {
+		    margin-bottom: -89px;
+		    position: relative;
+		    top: -89px;
+		}
+	}
+	.content_picture_title_grade_title {
+	    background: linear-gradient(to bottom, #B6D347 0%, #71B552 100%) repeat scroll 0 0 transparent;
+	    height: 120px;
+	    position: relative;
+	    width: 100%;
+	    h5 {
+		    bottom: 0;
+		    font-family: 'open sans',arial,sans-serif;
+		    line-height: 40px;
+		    margin: 0 0 0 5px;
+		    max-height: 100%;
+		    max-width: 97%;
+		    overflow: hidden;
+		    position: absolute;
+		    text-overflow: ellipsis;
+		    color: white !important;
+		    font-size: 40px;
+		    font-weight: normal;
+		}
+	}
+}
