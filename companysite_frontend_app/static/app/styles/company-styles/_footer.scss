@@ -1,9 +1,7 @@
 
 #footer{
-		height: 30px;
-		.container {
-			height: 20px;
-		}
+		height: 50px;
+		padding: 0 !important;
 		ul{
 			@include no-bullets;
 		}
@@ -11,9 +9,5 @@
 			position: relative;
 			left:55px;
 			top:10px;
-		}
-		.font-color {
-			position: relative;
-			bottom: 10px;
 		}
 }

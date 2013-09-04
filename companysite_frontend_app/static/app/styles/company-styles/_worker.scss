@@ -1,6 +1,9 @@
 
 
 .worker {
+	.worker-container {
+		margin-top: 0 !important;
+	}
 	.avatar-container {
 		height: 250px;
 		width: 150px;
@@ -25,6 +28,12 @@
 		.avatar-image {
 			height: 150px;
 			width: 150px;
+		}
+	}
+
+	.content {
+		.row {
+			margin-bottom: 15px;
 		}
 	}
 

@@ -7,29 +7,23 @@ version: 1.0
 
 -->
 
-<div class="_header-theme">
-	<div id='header'>
-		<div class='container'>
-			<div class='row'>
-				<div class="span2">
-					<div class='logo'>
-						{{#linkTo 'index'}}<img src={{unbound "view.staticUrl"}}img/logo.png>{{/linkTo}}
-					</div>
+<div id='header'>
+	<div class='container'>
+		<div class='row'>
+			<div class="span2">
+				<div class='logo'>
+					{{#linkTo 'index'}}<img src={{unbound "view.staticUrl"}}img/logo.png>{{/linkTo}}
 				</div>
-				<div class="span3">
-					<div class='logo-txt'>
-						<p>Teaching to program the right way</p>
-					</div>
-				</div>
-				<div class="nav-collapse">
-					<ul id="main-nav" class="nav pull-right">
-					    <li>{{#linkTo 'home'}}<i class="icon-home icon-large"></i> Home{{/linkTo}}</li>
-					    <li>{{#linkTo 'about'}}<i class="icon-info icon-large"></i> About{{/linkTo}}</li>
-					    <li>{{#linkTo 'contact'}}<i class="icon-phone icon-large"></i> Contact Us{{/linkTo}}</li>
-					    <li>{{#linkTo 'index'}}<i class="icon-pencil icon-large"></i> Articles{{/linkTo}}</li>
-					    <li>{{#linkTo 'showcase'}}<i class="icon-picture icon-large"></i> Project Gallery{{/linkTo}}</li>
-					</ul>
-				</div>
+			</div>
+
+			<div class="nav-collapse">
+				<ul id="main-nav" class="nav pull-right">
+				    <li>{{#linkTo 'home'}}<i class="icon-home icon-large"></i> Home{{/linkTo}}</li>
+				    <li>{{#linkTo 'about'}}<i class="icon-info icon-large"></i> About{{/linkTo}}</li>
+				    <li>{{#linkTo 'contact'}}<i class="icon-phone icon-large"></i> Contact Us{{/linkTo}}</li>
+				    <li>{{#linkTo 'index'}}<i class="icon-pencil icon-large"></i> Articles{{/linkTo}}</li>
+				    <li>{{#linkTo 'showcase'}}<i class="icon-picture icon-large"></i> Project Gallery{{/linkTo}}</li>
+				</ul>
 			</div>
 		</div>
 	</div>
